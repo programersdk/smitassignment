@@ -1,0 +1,354 @@
+/* Save the CSS rules from the <style> block in the HTML above into this file if using separate files */
+
+/* Example of the CSS content for style.css */
+
+/*
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 20px;
+            background-color: #fff;
+        }
+        header {
+            background-color: #eee;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin-bottom: 5px;
+            color: #333;
+        }
+        header p {
+            color: #666;
+            font-size: 0.9em;
+        }
+        nav {
+            background-color: #007bff;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 40px;
+            padding-top: 20px;
+        }
+        .section h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        #product-search {
+            background: linear-gradient(to right, #ffc107, #ffeb3b);
+            padding: 20px;
+            margin: 20px 0;
+        }
+        #product-search input[type="text"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            margin-right: 5px;
+        }
+        #product-search button {
+            padding: 8px 15px;
+            background-color: #e05d00;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #product-search button:hover {
+            background-color: #c85200;
+        }
+
+        #featured-products table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid #28a745;
+        }
+        #featured-products th, #featured-products td {
+            border: 1px solid #28a745;
+            padding: 10px;
+            text-align: left;
+        }
+        #featured-products th {
+            background-color: #28a745;
+            color: white;
+        }
+        #featured-products tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        #featured-products .product-image img {
+            max-width: 80px;
+            height: auto;
+        }
+        #featured-products .product-description ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        #featured-products .action-cell button {
+            padding: 5px 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #featured-products .action-cell button:hover {
+             background-color: #218838;
+        }
+
+
+        #create-account fieldset {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 15px;
+        }
+        #create-account legend {
+            background-color: #6f42c1;
+            color: white;
+            padding: 5px 10px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        #create-account .form-group {
+            margin-bottom: 10px;
+        }
+        #create-account label {
+            display: inline-block;
+            margin-right: 10px;
+            min-width: 100px;
+        }
+         #create-account input[type="text"],
+         #create-account input[type="password"],
+         #create-account input[type="email"],
+         #create-account input[type="date"],
+         #create-account select {
+            padding: 5px;
+            border: 1px solid #ccc;
+            width: 200px;
+         }
+         #create-account input[type="radio"],
+         #create-account input[type="checkbox"] {
+             margin-right: 5px;
+         }
+         #create-account .form-buttons button {
+             padding: 10px 15px;
+             margin-right: 10px;
+             cursor: pointer;
+         }
+         #create-account button[type="submit"] {
+             background-color: #007bff;
+             color: white;
+             border: none;
+         }
+         #create-account button[type="reset"] {
+             background-color: #6c757d;
+             color: white;
+             border: none;
+         }
+         #create-account button:hover {
+             opacity: 0.9;
+         }
+
+
+         #product-comparison table {
+             width: 100%;
+             border-collapse: collapse;
+             border: 2px solid #dc3545;
+         }
+         #product-comparison th, #product-comparison td {
+             border: 1px solid #dc3545;
+             padding: 10px;
+             text-align: center;
+         }
+         #product-comparison th {
+             background-color: #dc3545;
+             color: white;
+         }
+         #product-comparison tbody tr:nth-child(even) {
+             background-color: #f2f2f2;
+         }
+         #product-comparison p {
+             font-style: italic;
+             font-size: 0.9em;
+             margin-top: 10px;
+         }
+
+         #checkout-process .payment-info,
+         #checkout-process .order-summary {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+         }
+         #checkout-process .payment-info h3,
+         #checkout-process .order-summary h3 {
+             margin-bottom: 10px;
+             font-size: 1.2em;
+         }
+         #checkout-process .payment-info .form-group {
+             margin-bottom: 10px;
+         }
+         #checkout-process .payment-info label {
+             display: inline-block;
+             margin-right: 10px;
+             min-width: 100px;
+         }
+         #checkout-process .payment-info input[type="text"],
+         #checkout-process .payment-info input[type="date"] {
+             padding: 5px;
+             border: 1px solid #ccc;
+             width: 180px;
+         }
+          #checkout-process .payment-info input[type="radio"] {
+              margin-right: 5px;
+          }
+
+         #checkout-process .order-summary table {
+             width: 100%;
+             border-collapse: collapse;
+             margin-top: 10px;
+         }
+          #checkout-process .order-summary th,
+          #checkout-process .order-summary td {
+              border: 1px solid #ddd;
+              padding: 8px;
+              text-align: left;
+          }
+          #checkout-process .order-summary th {
+              background-color: #f2f2f2;
+          }
+           #checkout-process .order-summary .total-row td {
+               font-weight: bold;
+           }
+
+         #checkout-process button {
+             display: block;
+             width: 200px;
+             padding: 10px;
+             margin: 20px auto 0;
+             background-color: #28a745;
+             color: white;
+             border: none;
+             cursor: pointer;
+             text-align: center;
+         }
+         #checkout-process button:hover {
+             background-color: #218838;
+         }
+
+
+        #product-video video,
+        #product-video iframe,
+        #contact-us iframe,
+        #latest-video iframe {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #product-audio audio {
+             max-width: 100%;
+             display: block;
+             margin: 10px 0;
+        }
+
+        #contact-us {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+        }
+         #contact-us h2 {
+             border-bottom-color: #454d55;
+             color: white;
+         }
+        #contact-us p {
+            margin-bottom: 5px;
+            font-size: 0.95em;
+        }
+         #contact-us a {
+             color: #007bff;
+             text-decoration: none;
+         }
+         #contact-us a:hover {
+             text-decoration: underline;
+         }
+
+         #contact-us iframe {
+             margin-top: 15px;
+             height: 300px;
+             width: 100%;
+         }
+
+         #quick-links {
+             background-color: #212529;
+             color: white;
+             padding: 20px;
+         }
+         #quick-links h2 {
+             border-bottom-color: #343a40;
+             color: white;
+         }
+         #quick-links ul {
+             list-style: none;
+             padding-left: 0;
+         }
+         #quick-links li {
+             margin-bottom: 5px;
+         }
+         #quick-links a {
+             color: #007bff;
+             text-decoration: none;
+         }
+         #quick-links a:hover {
+             text-decoration: underline;
+         }
+
+         #latest-video .youtube-embed {
+             position: relative;
+             width: 100%;
+             height: 0;
+             padding-bottom: 56.25%;
+             margin-bottom: 10px;
+         }
+         #latest-video .youtube-embed iframe {
+             position: absolute;
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100%;
+         }
+          #latest-video .youtube-links a {
+              margin-right: 15px;
+              color: #333;
+              text-decoration: none;
+          }
+           #latest-video .youtube-links a:hover {
+               text-decoration: underline;
+           }
+
+*/
